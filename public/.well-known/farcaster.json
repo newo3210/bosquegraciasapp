@@ -1,0 +1,17 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "BosqueGracias",
+    "iconUrl": "https://placeholder.com/icon.png",
+    "homeUrl": "https://your-app-url.vercel.app",
+    "imageUrl": "https://placeholder.com/image.png",
+    "buttonTitle": "Open BosqueGracias",
+    "splashImageUrl": "https://placeholder.com/splash.png",
+    "splashBackgroundColor": "#ffffff",
+    "tags": ["nft", "art", "base"],
+    "primaryCategory": "entertainment"
+  },
+  "baseBuilder": {
+    "ownerAddress": ""
+  }
+}
