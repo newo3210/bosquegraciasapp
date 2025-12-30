@@ -1,12 +1,14 @@
 /**
  * Type definitions for NFT and User management
+ * 
+ * This file defines the core types used throughout the BosqueGracias application.
  */
 
 export type PointAction = 'VISIT' | 'MINT' | 'SHARE' | 'REFERRAL' | 'MILESTONE';
 
 export type UserRole = 'user' | 'admin' | 'artist';
 
-export interface User {
+export interface User extends Record<string, unknown> {
   walletAddress: string;
   createdAt: number;
   lastActive: number;

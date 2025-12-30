@@ -35,7 +35,7 @@ export const POINTS_CONFIG: Record<PointAction, number> = {
  */
 export async function getUser(address: string): Promise<User | null> {
   try {
-    const user = await redis.hgetall<User>(KEYS.user(address));
+    const user = await redis.hgetall(KEYS.user(address)) as User | null;
     return user && Object.keys(user).length > 0 ? user : null;
   } catch (error) {
     console.error('Error getting user:', error);
