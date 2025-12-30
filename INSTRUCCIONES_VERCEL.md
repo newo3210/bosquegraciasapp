@@ -173,6 +173,18 @@ Next.js se detecta automáticamente, pero puedes personalizar en `next.config.js
 - Revisa los logs en Vercel para ver el error específico
 - Asegúrate de que `npm install` funcione localmente
 
+### Error de Peer Dependencies (React 19)
+
+Si ves errores como:
+```
+npm error Could not resolve dependency:
+npm error peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from react-day-picker@8.10.1
+```
+
+**Solución**: El proyecto ya incluye un archivo `.npmrc` con `legacy-peer-deps=true` que resuelve este conflicto. Si el error persiste:
+- Verifica que el archivo `.npmrc` esté en el repositorio
+- Vercel debería usar automáticamente esta configuración
+
 ### Variables de Entorno no funcionan
 
 - Las variables `NEXT_PUBLIC_*` deben tener el prefijo correcto
