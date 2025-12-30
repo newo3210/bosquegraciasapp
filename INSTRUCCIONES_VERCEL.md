@@ -85,7 +85,10 @@ RPC_URL=https://mainnet.base.org
 NEXT_PUBLIC_BOSQUE_NFT_ADDRESS=0x0000000000000000000000000000000000000000
 
 # Pinata IPFS (obtener en https://pinata.cloud/)
-NEXT_PUBLIC_PINATA_JWT=tu_jwt_aqui
+# ⚠️ IMPORTANTE: PINATA_JWT NO debe tener prefijo NEXT_PUBLIC_ (es solo para servidor)
+# Usa API routes para subir archivos. Ver SEGURIDAD_VARIABLES.md para más detalles.
+PINATA_JWT=tu_jwt_aqui
+# ✅ El gateway SÍ puede ser público (solo lectura)
 NEXT_PUBLIC_PINATA_GATEWAY=tu_gateway_url_aqui
 
 # Admin Wallet
